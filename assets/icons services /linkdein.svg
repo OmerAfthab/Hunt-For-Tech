@@ -1,0 +1,11 @@
+<svg id="Group_230" data-name="Group 230" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.826" height="16.826" viewBox="0 0 16.826 16.826">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.853" y1="0.146" x2="0.146" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#007bb8"/>
+      <stop offset="1" stop-color="#0044e9"/>
+    </linearGradient>
+  </defs>
+  <ellipse id="Ellipse_69" data-name="Ellipse 69" cx="8.413" cy="8.413" rx="8.413" ry="8.413" transform="translate(0)" fill="url(#linear-gradient)"/>
+  <path id="Path_602" data-name="Path 602" d="M199.669,121.526H201.3v5.237h-1.629Zm.815-2.586a.944.944,0,1,1-.944.944.944.944,0,0,1,.944-.944" transform="translate(-194.786 -114.432)" fill="#fff"/>
+  <path id="Path_603" data-name="Path 603" d="M206,121.886h1.56v.715h0a1.724,1.724,0,0,1,1.543-.862c1.646,0,1.952,1.082,1.952,2.491v2.87h-1.608v-2.543c0-.608,0-1.388-.862-1.388s-.978.659-.978,1.345V127.1H206Z" transform="translate(-198.462 -114.77)" fill="#fff"/>
+</svg>
