@@ -49,7 +49,7 @@ body {
     border-color: rgba(0,0,0,.1);
 }
 .banner {
-    min-height: 75vh;
+    min-height:100vh;
     width: 100%;
     background-image: url('./assets/bg\ img.svg');
     background-position: center;
@@ -180,6 +180,25 @@ body {
     background-color: #81007F;
     width: 100vw;
     top: 0;
+    
+}
+.footer-svg-one {
+    width: 20vw;
+   position: relative;
+   left: 16%;
+}
+.footer-svg-one img {
+    position: absolute;
+    bottom: 0rem;
+}
+.footer-svg-two{
+    width: 12vw;
+    position: relative;
+
+}
+
+.footer-svg-two img {
+    left: 10px;
     
 }
 
