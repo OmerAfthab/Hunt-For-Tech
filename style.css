@@ -28,7 +28,10 @@ body {
 }
 
 .active-link{
-    border-bottom: 2px solid #fff !important;
+    /* border-bottom: 2px solid #fff !important; */
+    font-weight: bold;
+    transform: scale(1.2);
+    transition: transform 1s ease;
 }
 
 .custom-header-color {
