@@ -27,9 +27,11 @@ body {
     padding-top: 102px;
 }
 
+
 .active-link{
     /* border-bottom: 2px solid #fff !important; */
     font-weight: bold;
+    
 }
 
 .custom-header-color {
@@ -47,12 +49,13 @@ body {
     border-color: rgba(0,0,0,.1);
 }
 .banner {
-    min-height: 80vh;
+    min-height: 75vh;
     width: 100%;
     background-image: url('./assets/bg\ img.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: 100%;
 
 }
 .custom-btn {
@@ -72,7 +75,12 @@ body {
 }
 .custom-card-border {
     border: 1px solid #000;
-    min-width: 20.7vw;
+    /* min-width: 20.7vw; */
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
 }
 .bg-1 {
     background-color: #81007F;
@@ -104,14 +112,26 @@ body {
     color: #943b96;
 }
 .footer-svg-one {
-    width: 20vw;
-    margin-top: -30px;
-    margin-left: 220px;
-
+    width: 15vw;
+    /* margin-top: 10px;
+    margin-left: 220px; */
+   position: relative;
+   left: 16%;
+}
+.footer-svg-one img {
+    position: absolute;
+    bottom: 0rem;
 }
 .footer-svg-two{
     width: 10vw;
-    margin-top: -70px;
+    position: relative;
+
+}
+.footer-svg-two img {
+    height: 120px !important;
+    position: relative;
+    left: 2.2rem;
+    
 }
 .custom-position-style {
     position: relative;
@@ -135,6 +155,9 @@ body {
     transform: translateX(-50%); 
     margin-top: 0.8rem; 
 }
+.w-60 {
+    width: 60%;
+}
 @media only screen and (max-width: 900px) {
 *{
     overflow-x: hidden !important;
@@ -147,15 +170,42 @@ body {
     width: 50px;
     height: 50px;
 }
-     .custom-card-border {
-    min-width: 45vw !important;
-
+.card-container {
+   
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
 }
+
 .custom-position-style {
     background-color: #81007F;
     width: 100vw;
-    top:0;
+    top: 0;
+    
 }
 
  }
+ @media only screen and (min-device-width: 901px)
+ and (max-device-width: 991px) { 
+    .header-container {
+        width: 100% ;
+    }
+    
+}
 
+@media only screen and (min-device-width: 1577px) 
+and (max-device-width:1736px){
+    .footer-svg-two img {
+        left: 74px;
+        
+    }
+   
+}
+
+@media only screen and (min-device-width: 1736px) 
+and (max-device-width:2500px){
+    .footer-svg-two img {
+        left: 88px;
+        
+    }
+   
+}
