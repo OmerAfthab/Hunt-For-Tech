@@ -5,14 +5,21 @@
     outline: none;
     font-family: 'Roboto Condensed', sans-serif;
     scroll-behavior: smooth !important;
+   ;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
 }
 
 :root {
     --official-color: #81007F;
 }
-
-body {
-    position: relative;
+.custom-hover{
+    color: white;
+}
+.custom-hover:hover{
+   color: #ffa500;
 }
 
 .sticky {
@@ -55,7 +62,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: 100%;
+    object-fit: cover; 
 
 }
 .custom-btn {
@@ -130,7 +137,7 @@ body {
 .footer-svg-two img {
     height: 120px !important;
     position: relative;
-    left: 2.2rem;
+    left: 2.4rem;
     
 }
 .custom-position-style {
@@ -158,6 +165,7 @@ body {
 .w-60 {
     width: 60%;
 }
+
 @media only screen and (max-width: 900px) {
 *{
     overflow-x: hidden !important;
@@ -165,7 +173,11 @@ body {
 .header-container {
     width: 100% ;
 }
-
+.custom-small-screen{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
 .icon-img {
     width: 50px;
     height: 50px;
