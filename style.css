@@ -177,14 +177,9 @@ body{
 .header-container {
     width: 100% ;
 }
-.banner {
-    width: auto;
-    /* min-height: 100vh; */
-    background-color: #3d093c;
-    background-image: url('./assets/bg\ img.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+.custom-move-image{
+    position: relative;
+    left: 0rem;
 }
 
 .custom-small-screen{
