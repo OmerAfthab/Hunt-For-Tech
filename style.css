@@ -21,6 +21,10 @@ body{
 .custom-hover:hover{
    color: #ffa500;
 }
+.custom-move-image{
+    position: relative;
+    left: 2.4rem;
+}
 
 .sticky {
     position: fixed;
@@ -58,12 +62,12 @@ body{
 .banner {
     min-height:100vh;
     width: 100%;
+    background-color: #3d093c;
     background-image: url('./assets/bg\ img.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover; 
-
 }
 .custom-btn {
     border-radius: 25px;
@@ -82,7 +86,6 @@ body{
 }
 .custom-card-border {
     border: 1px solid #000;
-    /* min-width: 20.7vw; */
 }
 .card-container {
     display: grid;
@@ -118,10 +121,11 @@ body{
 .heading-color {
     color: #943b96;
 }
+.p-2-4{
+    padding: 13px 0;
+}
 .footer-svg-one {
     width: 15vw;
-    /* margin-top: 10px;
-    margin-left: 220px; */
    position: relative;
    left: 16%;
 }
@@ -173,6 +177,16 @@ body{
 .header-container {
     width: 100% ;
 }
+.banner {
+    width: auto;
+    /* min-height: 100vh; */
+    background-color: #3d093c;
+    background-image: url('./assets/bg\ img.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
 .custom-small-screen{
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
