@@ -74,6 +74,15 @@ body{
     background-color: #800080;
     font-size: 14px;
 }
+.submit-button{
+    border-radius: 7px;
+    background-color: #800080;
+    font-size: 14px;
+}
+.header-text {
+    letter-spacing: 0.4px;
+    max-width: 75%;
+}
 .bg_gray {
    background-color: #F4F4F4;
 }
@@ -477,6 +486,15 @@ background-color: #f1f1f1;
     overflow-x: hidden !important;
 
 }
+.custom-btn {
+    border-radius: 8px;
+    background-color: #800080;
+    font-size: 14px;
+}
+.header-text {
+    letter-spacing: 0.4px;
+    max-width: 63%;
+}
 .tech-cards{
     margin-right: 2.1rem;
 }
@@ -506,6 +524,13 @@ background-color: #f1f1f1;
 .custom-position-style {
     background-color: #81007F;
     width: 100vw;
+    margin-bottom: 2rem;
+   
+}
+.tower-image img {
+    height: 30rem;
+    position: relative;
+    top: 2.5rem;
 }
 .footer-svg-one {
     width: 20vw;
