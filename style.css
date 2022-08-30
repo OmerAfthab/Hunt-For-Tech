@@ -170,10 +170,301 @@ body{
     width: 60%;
 }
 
-@media only screen and (max-width: 900px) {
-*{
-    overflow-x: hidden !important;
+/*------Testimonials---------*/
+.checked {
+    color: orange;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  .card1 {
+    padding: 16px;
+    border-radius: 20px !important;
+    text-align: center;
+    height: 400px;
+  }
+  .h1{
+    font-size: 20px;
+    padding-left: 6rem;
+  }
+  
+.desc-fw{
+    font-weight: 500;
+  }
+
+  .explore-btn{
+      border-radius: 20px !important;
+  }
+  
+  .swipper-des-text{
+      font-size: 18px;
+  }
+  .slider-radius-btn{
+      border-radius: 100px !important;
+  }
+  .card-radius{
+      border-radius: 25px;
+      margin-bottom: 0px auto !important;
+     
+  }
+  .swiper-slide {
+    height: auto; 
+     display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+ .swiper {
+    width: 100%;
+    height: 100%;
+ }
+  
+  .swiper-button-prev {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: none;
+  }
+  
+  .swiper-button-prev::after {
+    display: none;
+  }
+ 
+  .swiper-button-next {
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    color: none;
+  } 
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next::after {
+    display: none;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #7D50C7 !important;
+    
 }
+  .swiper-pagination{
+    color: #5828A7 !important;
+    
+}
+
+.official_text_light{
+  color: #918E8E;
+}
+.font-small{
+font-size: 17px !important; 
+}
+
+.border-color{
+border: 1px solid #707070;
+}
+.image1{
+border-radius: 50%;
+border: 2px solid #ddd; 	
+object-fit: cover; 
+max-width: 60px;
+width: 60px;
+height: 60px;
+overflow: hidden;
+}
+
+
+
+.btn-fontsize{
+  border-radius: 100px;
+}
+
+.pagination-btn{
+  top:100%
+}
+.testimonial-text{
+color: #C3C3C3;
+font-size: 18px;
+}
+.testimonial-namefs{
+font-size: 19px;
+}
+.testimonial-desfs{
+font-size: 18px;
+color: #8A8A8A;
+}
+.footer-des-text{
+color: #EDEDED;
+}
+@media (min-width: 640px){
+
+.topcourses-height{
+height: 600px !important;
+}
+}
+@media only screen and (min-width: 250px) and (max-width: 444px){
+.testimonials-card{
+height: 650px !important;
+
+}
+}
+
+@media (min-width: 1200px){
+
+.testimonials-card{
+height: 430px !important;
+
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+.testimonials-card{
+height: 300px !important;
+
+}
+}
+@media only screen and (min-width: 620px) and (max-width: 992px){
+.testimonials-card{
+height: 860px !important;
+
+}
+}
+
+
+@media (max-width: 991px){
+.adress-box{
+padding-left: 15px;
+
+
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+.btn-fontsize{
+font-size: 18px;
+
+}
+}
+@media (max-width: 350px){
+
+.main-heading-fs{
+font-size: 48px !important;
+
+}
+}
+
+/* About-us*/
+.border-highlighter{
+border: 2px solid #81007F;
+background-color: #81007F;
+width: 5rem;  
+position: relative;
+left: 50%;
+transform: translateX(-50%); 
+margin-top: 0.8rem; 
+}
+.para{
+font-size:1.2rem;
+color:gray;
+opacity:0.8 ;
+font-weight: 500;
+}
+/* contact-us*/
+
+.formBox{
+position: relative;
+width: 100%;
+}
+
+.inputBox {
+    width: 100%;
+}
+.inputBox input{
+padding: 3px;
+margin-bottom: 2rem;
+font-size: 1em;
+outline: none;
+border-radius: 10px !important;
+}
+.custom-textarea textarea{
+padding: 10px;
+width: 100%;
+font-size: 1em;
+outline: none;
+resize: none;
+min-height: 220px;
+margin-bottom: 10px;
+border-radius: 20px !important;
+}
+input[type=submit] {
+background-color: #81007F;
+color: white;
+padding: 5px 20px;
+border: none;
+margin-left: 460px;
+border-radius: 4px;
+cursor: pointer;
+border-radius: 20px !important;
+}
+
+input[type=submit]:hover {
+background-color: #ffa500;
+}
+
+/*-------our process------*/
+
+.column {
+float: left;
+width: 25%;
+padding: 0 10px;
+}
+.pb-2{
+padding-left: 2rem;
+}
+.h1{
+font-size: 20px;
+  color: #918E8E;
+  font-weight: bold;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+}
+
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+background-color: #f1f1f1;
+}
+.w-image-75{
+    width: 6.3rem;
+}
+
+/* testimonial ends */
+
+@media only screen and (max-width: 900px) {
+
 .banner {
     min-height:40vh;
     width: 100%;
@@ -183,6 +474,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover; 
+    overflow-x: hidden !important;
+
 }
 .tech-cards{
     margin-right: 2.1rem;
@@ -213,8 +506,6 @@ body{
 .custom-position-style {
     background-color: #81007F;
     width: 100vw;
-    top: 0;
-    
 }
 .footer-svg-one {
     width: 20vw;
@@ -236,7 +527,7 @@ body{
     
 }
 
- }
+}
  @media only screen and (min-device-width: 901px)
  and (max-device-width: 991px) { 
     .header-container {
