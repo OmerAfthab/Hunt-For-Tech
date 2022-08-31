@@ -680,6 +680,9 @@ and (max-device-width:2000px){
             width: 80%;
             top: 0rem;
        }
-       
+       .swiper {
+        width: 75%;
+        height: 100%;
+     }
     
     }
