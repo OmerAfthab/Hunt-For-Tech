@@ -545,7 +545,7 @@ background-color: #f1f1f1;
    
 }
 .tower-image img {
-    width: 100vw;
+    height: 15rem;
     position: relative;
     top: 2.5rem;
 }
