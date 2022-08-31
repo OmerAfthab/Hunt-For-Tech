@@ -74,10 +74,10 @@
         <!-- Jumbotron -->
         <section class="banner text-white" id="banner">
             <div class="col-md-5 p-4 mt-5 mt-md-0 pt-md-5 ps-md-5 ms-md-3 ">
-                <h2 class="mt-md-5 fw-bold">Professional Website</h2>
-                <h2 class="fw-bold">Design & Software</h2>
-                <h2 class="fw-bold">Development Company</h2>
-                <p class="py-3 fw-bold lh-md header-text">The Fastest way to grow your business with the leader in technology</p>
+                <h2 class="mt-md-5 fw-bold jumbotron-header">Professional Website</h2>
+                <h2 class="fw-bold jumbotron-header" >Design & Software</h2>
+                <h2 class="fw-bold jumbotron-header">Development Company</h2>
+                <p class="py-3 lh-md header-text">The Fastest way to grow your business with the leader in technology</p>
                 <a class="btn rounded-5 fw-bold px-4 p-2 text-white custom-btn" href="#contact-us">Contact Us</a>
             </div>
 
@@ -525,30 +525,36 @@
           
                     </div>
                     <div class="col-lg-6  mt-5  mt-md-1 pt-md-4">
-                        <form class="needs-validation">
+                        <form name="contactForm"  onsubmit='return validateForm()'>
                             <div class="formBox">
                                 
                                 <div class="d-flex flex-column flex-md-row justify-content-md-between">
                                     <div class="inputBox me-md-4">
-                                        <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="text" placeholder="Full Name" required>
+                                        <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" id="contact-name" type="text" name="name" placeholder="Full Name" onkeyup='validateName()'>
+                                        <span class='error-message' id='name-error'></span>
                                     </div>
                                     <div class="inputBox">
-                                        <input class="  w-100 border-1 ps-3 py-3 py-md-2 form-control" type="text" placeholder="Email" required>
+                                        <!-- <input class="w-100 border-1 ps-3 py-3 py-md-2 email" type="text" name="EMail" placeholder="Email" > -->
+                                        <input type="email" class="w-100 border-1 ps-3 py-3 py-md-2 email form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+                                         <span class='error-message' id='email-error'></span>
                                     </div>
                                 </div>
         
                                 <div class="d-flex flex-column flex-md-row justify-content-md-between">
                                     <div class="inputBox me-md-4">
-                                        <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="text" placeholder="Country" required>
+                                        <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="text" placeholder="Country" >
                                     </div>
                                     <div class="inputBox">
-                                        <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="number" placeholder="Contact Number" required>
+                                        <input id="contact-phone" class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="tel" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+                                        <span class='error-message' id='phone-error'></span>
                                     </div>
                                 </div>
         
                                 <div class="row100">
                                     <div class="custom-textarea">
-                                        <textarea placeholder="How can we Help?"></textarea>
+                                        <textarea class="form-control" id='contact-message'  name='message'  placeholder="How can we Help?" onkeyup='validateMessage()'></textarea>
+                                        <span class='error-message' id='message-error'></span>
+                                        
                                     </div>
                                     <div class="text-center text-md-end" >
                                     <button class="btn rounded-5 fw-bold px-4 p-2 text-white submit-button">Contact Us</button>

@@ -54,6 +54,10 @@ body{
     border: none !important;
 }
 
+.jumbotron-header{
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
 
 .navbar-light .navbar-toggler {
     color: transparent !important;
@@ -80,8 +84,8 @@ body{
     font-size: 14px;
 }
 .header-text {
-    letter-spacing: 0.4px;
-    max-width: 75%;
+    letter-spacing: 2.3px;
+    max-width: 90%;
 }
 .bg_gray {
    background-color: #F4F4F4;
@@ -179,9 +183,18 @@ body{
     width: 60%;
 }
 
+.fail {
+    border: 2px solid red;
+}
+
+
 /*------Testimonials---------*/
 .checked {
     color: orange;
+  }
+
+  .tower-image img {
+      width: 100vw;
   }
   
   /* Responsive columns */
@@ -495,6 +508,10 @@ background-color: #f1f1f1;
     letter-spacing: 0.4px;
     max-width: 63%;
 }
+.jumbotron-header{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
 .tech-cards{
     margin-right: 2.1rem;
 }
@@ -528,7 +545,7 @@ background-color: #f1f1f1;
    
 }
 .tower-image img {
-    height: 30rem;
+    width: 100vw;
     position: relative;
     top: 2.5rem;
 }
@@ -553,6 +570,8 @@ background-color: #f1f1f1;
 }
 
 }
+
+
  @media only screen and (min-device-width: 901px)
  and (max-device-width: 991px) { 
     .header-container {

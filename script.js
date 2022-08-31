@@ -36,171 +36,6 @@ for(var i=0; i<btns.length; i++){
   })
 }
 
-// const swiper1 = new Swiper(".mySwiper", {
-//   direction: 'horizontal',
-//   loop: true,
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 1,
-//       spaceBetween: 10,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 50,
-//     },
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   autoplay: {
-// delay: 2500,
-// disableOnInteraction: false,
-// },
-
-// navigation: {
-// nextEl: ".swiper-button-next1",
-// prevEl: ".swiper-button-prev1",
-// },
- 
-// });
-
-// const swiper2 = new Swiper(".mySwiper2", {
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   pagination: {
-//     el: ".swiper-pagination2",
-//     clickable: true,
-//   },
-//   autoplay: {
-// delay: 2500,
-// disableOnInteraction: false,
-// },
-
-// navigation: {
-// nextEl: ".swiper-button-next2",
-// prevEl: ".swiper-button-prev2",
-// },
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 2,
-//       spaceBetween: 20,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 50,
-//     },
-//   },
-// });
-
-// const swiper3 = new Swiper(".mySwiper3", {
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   pagination: {
-//     el: ".swiper-pagination3",
-//     clickable: true,
-//   },
-//   autoplay: {
-// delay: 2500,
-// disableOnInteraction: false,
-// },
-
-// navigation: {
-// nextEl: ".swiper-button-next3",
-// prevEl: ".swiper-button-prev3",
-// },
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 2,
-//       spaceBetween: 20,
-//     },
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//       spaceBetween: 50,
-//     },
-//   },
-// });
-
-// const swiper4 = new Swiper(".mySwiper4", {
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   pagination: {
-//     el: ".swiper-pagination-4",
-//     clickable: true,
-//   },
-//   autoplay: {
-// delay: 2500,
-// disableOnInteraction: false,
-// },
-
-// navigation: {
-// nextEl: ".swiper-button-next4",
-// prevEl: ".swiper-button-prev4",
-// },
-//   breakpoints: {
-//     640: {
-//       slidesPerView: 2,
-//       spaceBetween: 20,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 30,
-//     },
-//     1024: {
-//       slidesPerView: 2,
-//       spaceBetween: 30,
-//     },
-//   },
-// });
-
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-
-
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   autoplay: {
-//     delay: 2400,
-//     disableOnInteraction: false,
-    
-//     },
-//     breakpoints: {
-//           640: {
-//             slidesPerView: 1,
-//             spaceBetween: 20,
-//           },
-//           768: {
-//             slidesPerView: 3,
-//             spaceBetween: 30,
-//           },
-//           1024: {
-//             slidesPerView: 2,
-//             spaceBetween: 30,
-//           },
-//         },
-// });
-
 var mySwiper = new Swiper ('.mySwiper1', 
 {
     slidesPerView: 1,
@@ -248,3 +83,144 @@ var mySwiper = new Swiper ('.mySwiper1',
             },
   loop: true,
 }); 
+
+
+//form validation
+// function validate(){
+//   let email = document.querySelector('.email')
+//   let username = document.querySelector(".username");
+//   var text;
+//   if(username.value.length < 5){
+//     username.classList.add("fail");
+//     return false;
+//   }else {
+//     username.classList.remove('fail')
+//   }
+//   if(email.value.indexOf("@") == -1 || email.value.length < 6){
+//     email.classList.add("fail");
+//     return false;
+//   }else {
+//     email.classList.remove('fail')
+//   }
+//   alert("Form Submitted Successfully!");
+//   return true;
+// }
+
+
+// function validateName(e) {
+// e.preventDefault()
+//   var name = document.getElementById('contact-name').value;
+
+//   if(name.length == 0) {
+
+//     producePrompt('Name is required', 'name-error' , 'red')
+//     return false;
+
+// }
+
+// if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+//     producePrompt('First and last name, please.','name-error', 'red');
+//     return false;
+
+// }
+
+// producePrompt('Valid', 'name-error', 'green');
+// return true;
+
+// }
+
+// function validateEmail(e) {
+//   e.preventDefault()
+//   var email = document.getElementById('contact-email').value;
+  
+//   if(email.length == 0) {
+  
+//   producePrompt('Email Invalid','email-error', 'red');
+//   return false;
+  
+//   }
+  
+//   if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+  
+//   producePrompt('Email Invalid', 'email-error', 'red');
+//   return false;
+  
+//   }
+  
+//   producePrompt('Valid', 'email-error', 'green');
+//   return true;
+  
+//   }
+
+// function validatePhone(e) {
+//   e.preventDefault()
+// var phone = document.getElementById('contact-phone').value;
+
+// if(phone.length == 0) {
+//   producePrompt('Phone number is required.', 'phone-error', 'red');
+//   return false;
+// }
+
+// if(phone.length != 10) {
+//   producePrompt('Include area code.', 'phone-error', 'red');
+//   return false;
+// }
+
+// if(!phone.match(/^[0-9]{10}$/)) {
+//   producePrompt('Only digits, please.' ,'phone-error', 'red');
+//   return false;
+// }
+
+// producePrompt('Valid', 'phone-error', 'green');
+// return true;
+
+// }
+
+
+
+// function validateMessage(e) {
+//   e.preventDefault()
+// var message = document.getElementById('contact-message').value;
+// var required = 30;
+// var left = required - message.length;
+
+// if (left > 0) {
+// producePrompt(left + ' more characters required','message-error','red');
+// return false;
+// }
+
+// producePrompt('Valid', 'message-error', 'green');
+// return true;
+
+// }
+
+
+// function validateForm(e) {
+//   e.preventDefault()
+// if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+// jsShow('submit-error');
+// producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+// setTimeout(function(){jsHide('submit-error');}, 2000);
+// return false;
+// }
+// else {
+
+// }
+// }
+
+// function jsShow(id) {
+// document.getElementById(id).style.display = 'block';
+// }
+
+// function jsHide(id) {
+// document.getElementById(id).style.display = 'none';
+// }
+
+
+// function producePrompt(message, promptLocation, color) {
+
+// document.getElementById(promptLocation).innerHTML = message;
+// document.getElementById(promptLocation).style.color = color;
+
+// }
