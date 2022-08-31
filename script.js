@@ -85,27 +85,6 @@ var mySwiper = new Swiper ('.mySwiper1',
 }); 
 
 
-//form validation
-// function validate(){
-//   let email = document.querySelector('.email')
-//   let username = document.querySelector(".username");
-//   var text;
-//   if(username.value.length < 5){
-//     username.classList.add("fail");
-//     return false;
-//   }else {
-//     username.classList.remove('fail')
-//   }
-//   if(email.value.indexOf("@") == -1 || email.value.length < 6){
-//     email.classList.add("fail");
-//     return false;
-//   }else {
-//     email.classList.remove('fail')
-//   }
-//   alert("Form Submitted Successfully!");
-//   return true;
-// }
-
 
 function validateName() {
 

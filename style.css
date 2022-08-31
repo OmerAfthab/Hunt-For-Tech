@@ -73,6 +73,10 @@ body{
     background-size: cover;
     object-fit: cover; 
 }
+
+.swiper_business_section{
+    padding:0 2.5rem;
+}
 .custom-btn {
     border-radius: 25px;
     background-color: #800080;
@@ -597,12 +601,35 @@ and (max-device-width:2000px){
     .footer-svg-two img {
        left: 6.2rem;  
     }
+    .outer-section {
+        margin: 0 5rem;
+    }
+    #services {
+        width: 90%;
+        margin: auto;
+    }
+    .swiper_business_section{
+        width: 70vw;
+        margin: auto;
+     }
 }
     @media only screen and (min-device-width: 2001px) 
     and (max-device-width:2265px){
         .footer-svg-two img {
            left: 8rem;       
       }
+      #services {
+        width: 70%;
+        margin: auto;
+    }
+    #home .bg_gray {
+        width: 65%;
+        margin: auto;
+    }
+    .swiper_business_section{
+       width: 70vw;
+       margin: auto;
+    }
     }
 
     @media only screen and (min-device-width: 2266px) 
@@ -610,4 +637,16 @@ and (max-device-width:2000px){
         .footer-svg-two img {
            left: 10rem;       
       }
+      #services {
+        width: 70%;
+        margin: auto;
+    }
+    #home .bg_gray {
+        width: 65%;
+        margin: auto;
+    }
+    .swiper_business_section{
+        width: 70vw;
+        margin: auto;
+     }
     }
