@@ -301,7 +301,10 @@ height: 60px;
 overflow: hidden;
 }
 
-
+.error-message {
+    position: relative;
+    bottom: 1.7rem;
+}
 
 .btn-fontsize{
   border-radius: 100px;
