@@ -52,6 +52,7 @@ var mySwiper = new Swiper ('.mySwiper1',
   {
     el: '.swiper-pagination',
     dynamicBullets: true,
+    clickable: true,
   },
   zoom: true,
   keyboard: 
@@ -118,12 +119,12 @@ if(phone.length == 0) {
   return false;
 }
 
-if(phone.length != 10) {
+if(phone.length != 12 ) {
   producePrompt('Include area code.', 'phone-error', 'red');
   return false;
 }
 
-if(!phone.match(/^[0-9]{10}$/)) {
+if(!phone.match(/^[0-9]{12}$/)) {
   producePrompt('Only digits, please.' ,'phone-error', 'red');
   return false;
 }
@@ -171,8 +172,7 @@ return true;
 
 }
 
-function validateForm(e) {
-  e.preventDefault() 
+function validateForm() {
 if (!validateName() || !validateEmail() || !validatePhone() || !validateMessage()) {
 jsShow('submit-error');
 producePrompt('Please fix errors to submit.', 'submit-error', 'red');
@@ -201,19 +201,6 @@ document.getElementById(promptLocation).style.color = color;
 }
 
 
-// modal code
-//     const fullname =  document.querySelector('fullName');
-//     const emailAdd =  document.querySelector('email-address');
-//     const country = document.querySelector('country-name');
-//     const contactNo = document.querySelector('contact-num');
-//     const msgProvided = document.querySelector('message-given');
-
-
-//     fullname.textContent = name;
-//     emailAdd.textContent = email;
-//     country.textContent = document.querySelector('.native-country').value;
-//     contactNo.textContent = phone;
-//     msgProvided.textContent = message
 
 
     
