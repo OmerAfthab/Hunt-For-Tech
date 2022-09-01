@@ -74,6 +74,14 @@ body{
     background-size: cover;
     object-fit: cover; 
 }
+/* .modal-background {
+    border: 3px soid ;
+    background-image: url('./assets/bg\ img.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover; 
+} */
 
 .swiper_business_section{
     padding:0 2.5rem;
@@ -102,10 +110,7 @@ body{
     width: 45px !important;
     height: 45px !important;
 }
-.custom-card-border {
-    border: 1px solid #000;
-    height: 15rem;
-}
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -126,6 +131,9 @@ body{
 .icon-img {
     width: 40px;
     height: 40px;
+}
+.card-height {
+    width: 17rem;
 }
 .resize-img {
     width: 60px;
@@ -316,9 +324,7 @@ overflow: hidden;
   border-radius: 100px;
 }
 
-.pagination-btn{
-  top:100%
-}
+
 .testimonial-text{
 color: #C3C3C3;
 font-size: 18px;
@@ -511,6 +517,9 @@ background-color: #f1f1f1;
 .swiper_business_section{
     padding:0 0rem
 }
+.card-height {
+    width: 100%;
+}
 .custom-btn {
     border-radius: 8px;
     background-color: #800080;
@@ -598,6 +607,23 @@ and (max-device-width:1736px){
         left: 65px;
         
     }
+    .first-card {
+    
+    }
+ .extra-large-screen {
+     width: auto;
+     display: flex;
+     justify-content: center;
+     }
+ .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+ }
+
+ .about-left{
+    margin-left: -1.5rem;
+ }
    
 }
 
@@ -606,9 +632,7 @@ and (max-device-width:2000px){
     .footer-svg-two img {
        left: 6.2rem;  
     }
-    .outer-section {
-        margin: 0 5rem;
-    }
+    
     #services {
         width: 90%;
         margin: auto;
@@ -619,7 +643,7 @@ and (max-device-width:2000px){
      }
      .custom-card-border {
         border: 1px solid #000;
-        height: 17rem;
+        
     }
 }
     @media only screen and (min-device-width: 2001px) 
@@ -641,7 +665,6 @@ and (max-device-width:2000px){
     }
     .custom-card-border {
         border: 1px solid #000;
-        height: 18rem;
     }
     }
 
@@ -664,11 +687,11 @@ and (max-device-width:2000px){
      }
      .custom-card-border {
         border: 1px solid #000;
-        height: 20rem;
+        
     }
     }
-
-    @media only screen and (min-width: 1366px) {
+   
+    @media only screen and (min-device-width: 1900px) and (max-device-width:2500px){
       
        body {
             width: 80%;
@@ -680,9 +703,21 @@ and (max-device-width:2000px){
             width: 80%;
             top: 0rem;
        }
-       .swiper {
-        width: 75%;
-        height: 100%;
-     }
-    
+       .first-card {
+           margin-right: 2.5rem;
+       }
+    .extra-large-screen {
+        margin-left: -2rem;
+        }
+    .card-container {
+       margin-left: 2.5rem;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       column-gap: 7rem;
+       
+    }
+
+    .about-left{
+       margin-left: -1.5rem;
+    }
     }

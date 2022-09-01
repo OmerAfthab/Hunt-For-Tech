@@ -78,8 +78,63 @@
                 <h2 class="fw-bold jumbotron-header" >Design & Software</h2>
                 <h2 class="fw-bold jumbotron-header">Development Company</h2>
                 <p class="py-3 lh-md header-text">The Fastest way to grow your business with the leader in technology</p>
-                <a class="btn rounded-5 fw-bold px-4 p-2 text-white custom-btn" href="#contact-us">Contact Us</a>
-            </div>
+                <!-- <a class="btn rounded-5 fw-bold px-4 p-2 text-white custom-btn">Contact Us</a> -->
+                <!-- Button trigger modal -->
+<button type="button" class="btn rounded-5 fw-bold px-4 p-2 text-white custom-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Contact Us
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-background">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="exampleModalLabel">Hunt4Tech</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+            <form name="contactForm" >
+                <div class="formBox">
+                    
+                    <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                        <div class="inputBox me-md-4">
+                            <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" id="contact-name" type="text" name="name" placeholder="Full Name" required onkeyup='validateName()'>
+                            <span class='error-message' id='name-error'></span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" class="w-100 border-1 ps-3 py-3 py-md-2 email form-control" id="contact-email" name="email" placeholder="Enter Email" required onkeyup='validateEmail()'>
+                             <span class='error-message' id='email-error'></span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                        <div class="inputBox me-md-4">
+                            <input class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="text" placeholder="Country" required>
+                        </div>
+                        <div class="inputBox">
+                            <input id="contact-phone" class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="tel" name="phone" placeholder="Ex: 1231231234" required onkeyup='validatePhone()'>
+                            <span class='error-message' id='phone-error'></span>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="custom-textarea">
+                            <textarea class="form-control" id='contact-message'  name='message'  placeholder="How can we Help?" required onkeyup='validateMessage()'></textarea>
+                            <!-- <span class='error-message ' id='message-error'></span> -->
+                            
+                        </div>
+                        <div class="text-center text-md-end" >
+                        <button onclick="return validateForm()" class="btn rounded-5 fw-bold px-4 p-2 text-white submit-button">Contact Us</button>
+                        
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
         </section>
         <!-- Jumbotron -->
@@ -158,7 +213,7 @@
                     Our Services
                     <div class="border-highlighter"></div>
                 </h3>
-                <p class="text-center px-5 px-md-5 text-muted">It is a long established fact that a reader will be
+                <p class="text-center px-5 px-md-5  text-muted">It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at its layout. The point of using Lorem
                     Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
                     here, content here', making it look like readable English. Many desktop publishing packages and web
@@ -166,17 +221,17 @@
                     uncover many web sites still in their infancy.
                 </p>
             </div>
-            <div class="container-fluid ps-md-5 d-flex flex-column flex-lg-row gap-md-2">
-                <div class="col-lg-2 py-5 ms-lg-3 order-1 order-md-0 mt-2 mt-md-0 custom-card-bg-color text-white d-flex justify-content-center 
-                align-items-end">
+            <div class=" container-fluid ps-md-5 ps-xxl-0 d-flex flex-column flex-lg-row gap-md-5 extra-large-screen">
+                <div class="first-card col-lg-2 py-5 ms-lg-3  order-1 order-md-0 mt-2 mt-md-0 custom-card-bg-color text-white d-flex justify-content-center 
+                align-items-end ">
                     <p class="py-5 py-md-0">
                         One More
                         <span class="d-block fw-bold text-center">Services</span>
                     </p>
                 </div>
                 <div class="col-sm-12 col-lg-9 card-container">
-                    <div class="p-3 ps-4 custom-card-border mt-2 mt-md-0 text-center text-md-start">
-                        <div class="py-5 py-md-0">
+                    <div class="card-height p-3 ps-4 border border-1 border-dark mt-2 mt-md-0 text-center text-md-start">
+                        <div class="py-5 py-md-0 ">
                             <div>
                                 <img src="./assets/icons services/16775106821600774621.svg" alt="icon"
                                     class="img-fluid resize-img">
@@ -184,7 +239,7 @@
                             <h5>Website <span class="d-block fw-bold">Development</span></h5>
                         </div>
                     </div>
-                    <div class="p-3 ps-4 custom-card-border mt-md-0 text-center text-md-start">
+                    <div class="card-height p-3 ps-4 border border-1 border-dark mt-md-0 text-center text-md-start">
                         <div class="custom-padding py-5 py-md-0 mt-md-3">
                             <div>
                                 <img src="./assets/icons services/1.svg" alt="icon" class="img-fluid icon-img">
@@ -192,7 +247,7 @@
                             <h5 class="mt-2">Application <span class="d-block fw-bold">Development</span></h5>
                         </div>
                     </div>
-                    <div class=" p-3 ps-4 custom-card-border bg-1 text-center text-md-start">
+                    <div class="card-height p-3 ps-4  bg-1 text-center text-md-start">
                         <div  class="py-5 py-md-0">
                             <div class="custom-padding">
                                 <img src="./assets/icons services/20067942981535701994.svg" alt="icon"
@@ -202,16 +257,16 @@
                             <h5 class="text-white mt-2">Graphic <span class="d-block fw-bold">Designing</span></h5>
                         </div>
                     </div>
-                    <div class="mt-md-2 p-3 ps-4 custom-card-border bg-2 text-center text-md-start">
+                    <div class="card-height mt-md-2 p-3 ps-4  bg-2 text-center text-md-start">
                         <div  class="py-5 py-md-0">
-                            <div>
+                            <div class="custom-padding">
                                 <img src="./assets/icons services/18293808771605806466.svg" alt="icon"
                                     class="img-fluid resize-img">
                             </div>
                             <h5 class="text-white">Digital <span class="d-block fw-bold">Marketing</span></h5>
                         </div>
                     </div>
-                    <div class="mt-md-2 p-3 ps-4 custom-card-border bg-3 text-center text-md-start">
+                    <div class="card-height mt-md-2 p-3 ps-4  bg-3 text-center text-md-start">
                         <div  class="py-5 py-md-0">
                             <div class="custom-padding">
                                 <img src="./assets/icons services/29464321586787195.svg" alt="icon"
@@ -220,7 +275,7 @@
                             <h5 class="text-white mt-2">Website <span class="d-block fw-bold">Maintenance</span></h5>
                         </div>
                     </div>
-                    <div class="mt-md-2 p-3 ps-4 custom-card-border bg-4 text-center text-md-start">
+                    <div class="card-height mt-md-2 p-3 ps-4  bg-4 text-center text-md-start">
                         <div  class="py-5 py-md-0">
                             <div class="custom-padding">
                                 <img src="./assets/icons services/30-Copywriting.svg" alt="icon"
@@ -287,10 +342,7 @@
         <!-- tech stack section ends -->
 
         <!-- testimonials section -->
-            
-
-
-
+          
             <section id="testimonials" class="container-fluid  alt_bg py-4  mt-2 ">
                 <h3 class="text-center fw-bold mb-3">
                   Testimonials
@@ -436,20 +488,22 @@
 
              <!-- About-Us --> 
              <section id="about-us" class="pt-1 mt-3  px-lg-5 ">
-                <div class="container  mt-3 ">
-                  <div class="row">
-                    <div class="container py-md-4">
-                        <h3 class="text-center fw-bold mb-3">
-                            About Us
-                            <div class="border-highlighter"></div>
-                        </h3>
-                        </div>
-                    <div class="col-lg-6 order-1 order-md-0  mt-md-4 ">
-                      <h2 class="mt-3 mt-md-2 pb-4 text-center text-md-start "><b>Why Choose Us?</b></h2>
-                      <p class="para text-center text-md-start">Our unique offerings in web designing, app solutions, create personalized engagement in every moment of the customer journey.We're recognized thought leaders and drivers of innovation, web designing, software, and app solutions that push the industry forward with a full-service range. Our team is a collective of diverse talents from around the world with proven experience in web design and software solutions, all sharing the same enthusiasm for solving business problems in an ever changing world.With a multidisciplinary approach, we use storytelling, design, and technology to create experiences and platforms that touch the hearts of many and leave long lasting impressions.It echoes our belief that active imagination & excellent technique cannot occur without fondness, brilliance, and beyond all dedication, demonstrated by a portfolio and consumers that have pivoted into trustworthy collaborations.</p>
+                <div class="container-fluid  mt-3 px-lg-2 ">
+                  
+                  <div class="py-md-4">
+                    <h3 class="text-center fw-bold mb-3">
+                        About Us
+                        <div class="border-highlighter"></div>
+                    </h3>
+                  </div>
+                  <div class="d-flex flex-column flex-md-row justify-content-md-evenly gap-4 about-section">
+                    
+                    <div class="col-lg-6 order-1 order-md-0  mt-md-4 ps-md-4 about-left">
+                      <h2 class="mt-3 mt-md-2 pb-4 text-center text-md-start ms-md-2"><b>Why Choose Us?</b></h2>
+                      <p class="para text-center text-md-start ms-md-2 ps-md-1">Our unique offerings in web designing, app solutions, create personalized engagement in every moment of the customer journey.We're recognized thought leaders and drivers of innovation, web designing, software, and app solutions that push the industry forward with a full-service range. Our team is a collective of diverse talents from around the world with proven experience in web design and software solutions, all sharing the same enthusiasm for solving business problems in an ever changing world.With a multidisciplinary approach, we use storytelling, design, and technology to create experiences and platforms that touch the hearts of many and leave long lasting impressions.It echoes our belief that active imagination & excellent technique cannot occur without fondness, brilliance, and beyond all dedication, demonstrated by a portfolio and consumers that have pivoted into trustworthy collaborations.</p>
                     </div>
                     
-                    <div class="col-lg-6 mt-md-4">
+                    <div class="col-lg-6 mt-md-4 about-right">
                       <img src="assets/about us.svg" class="img-fluid " alt="Logo">
           
                     </div>
