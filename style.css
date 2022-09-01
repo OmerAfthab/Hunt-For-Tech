@@ -74,15 +74,20 @@ body{
     background-size: cover;
     object-fit: cover; 
 }
-.modal-background {
+/* .modal-background {
     background-color: #3d093c;
-}
+} */
 
 .swiper_business_section{
     padding:0 2.5rem;
 }
 .custom-btn {
     border-radius: 25px;
+    background-color: #800080;
+    font-size: 14px;
+}
+.custom-btn-1{
+    border-radius: 7px;
     background-color: #800080;
     font-size: 14px;
 }

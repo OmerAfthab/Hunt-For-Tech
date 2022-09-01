@@ -199,3 +199,21 @@ document.getElementById(promptLocation).innerHTML = message;
 document.getElementById(promptLocation).style.color = color;
 
 }
+
+
+// modal code
+//     const fullname =  document.querySelector('fullName');
+//     const emailAdd =  document.querySelector('email-address');
+//     const country = document.querySelector('country-name');
+//     const contactNo = document.querySelector('contact-num');
+//     const msgProvided = document.querySelector('message-given');
+
+
+//     fullname.textContent = name;
+//     emailAdd.textContent = email;
+//     country.textContent = document.querySelector('.native-country').value;
+//     contactNo.textContent = phone;
+//     msgProvided.textContent = message
+
+
+    
