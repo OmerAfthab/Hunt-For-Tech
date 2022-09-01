@@ -56,8 +56,8 @@ body{
 }
 
 .jumbotron-header{
-    letter-spacing: 1px;
-    font-size: 2.2rem;
+    letter-spacing: 1.1px;
+    font-size: 2.5rem;
 }
 
 .navbar-light .navbar-toggler {
@@ -74,14 +74,9 @@ body{
     background-size: cover;
     object-fit: cover; 
 }
-/* .modal-background {
-    border: 3px soid ;
-    background-image: url('./assets/bg\ img.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover; 
-} */
+.modal-background {
+    background-color: #3d093c;
+}
 
 .swiper_business_section{
     padding:0 2.5rem;
@@ -97,8 +92,9 @@ body{
     font-size: 14px;
 }
 .header-text {
-    letter-spacing: 2.3px;
-    max-width: 90%;
+    letter-spacing: 3.5px;
+    max-width: 98%;
+  
 }
 .bg_gray {
    background-color: #F4F4F4;
