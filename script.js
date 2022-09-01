@@ -94,6 +94,7 @@ function validateName() {
   if(name.length == 0) {
 
     producePrompt('Name is required', 'name-error' , 'red')
+    document.querySelector('.modal-dialog').style.display='none'
     return false;
 
 }
@@ -101,35 +102,43 @@ function validateName() {
 if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
     producePrompt('First and last name, please.','name-error', 'red');
+    document.querySelector('.modal-dialog').style.display='none'
     return false;
 
 }
 
 producePrompt('Valid', 'name-error', 'green');
+document.querySelector('.modal-dialog').style.display='block'
 return true;
 
 }
 
 function validatePhone() {
 
-var phone = document.getElementById('contact-phone').value;
+var phone = document.getElementById('phone').value;
+
 
 if(phone.length == 0) {
   producePrompt('Phone number is required.', 'phone-error', 'red');
+  document.querySelector('.modal-dialog').style.display='none'
   return false;
 }
 
-if(phone.length != 12 ) {
-  producePrompt('Include area code.', 'phone-error', 'red');
+if(phone.length != 10 ) {
+  producePrompt('10 digit number with Country Code.', 'phone-error', 'red');
+  document.querySelector('.modal-dialog').style.display='none';
   return false;
 }
 
-if(!phone.match(/^[0-9]{12}$/)) {
+if(!phone.match(/^[0-9]{10}$/)) {
   producePrompt('Only digits, please.' ,'phone-error', 'red');
+  document.querySelector('.modal-dialog').style.display='none'
   return false;
 }
 
 producePrompt('Valid', 'phone-error', 'green');
+document.querySelector('.modal-dialog').style.display='block'
+
 return true;
 
 }
@@ -141,6 +150,7 @@ var email = document.getElementById('contact-email').value;
 if(email.length == 0) {
 
 producePrompt('Email Invalid','email-error', 'red');
+document.querySelector('.modal-dialog').style.display='none'
 return false;
 
 }
@@ -148,39 +158,47 @@ return false;
 if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
 
 producePrompt('Email Invalid', 'email-error', 'red');
+document.querySelector('.modal-dialog').style.display='none'
+
 return false;
 
 }
 
 producePrompt('Valid', 'email-error', 'green');
+document.querySelector('.modal-dialog').style.display='block'
+
 return true;
 
 }
 
 function validateMessage() {
 var message = document.getElementById('contact-message').value;
-var required = 30;
+var required = 20;
 var left = required - message.length;
 
 if (left > 0) {
 producePrompt(left + ' more characters required','message-error','red');
+document.querySelector('.modal-dialog').style.display='none'
 return false;
 }
 
 producePrompt('Valid', 'message-error', 'green');
+document.querySelector('.modal-dialog').style.display='block'
+
 return true;
 
 }
 
 function validateForm() {
 if (!validateName() || !validateEmail() || !validatePhone() || !validateMessage()) {
+
 jsShow('submit-error');
 producePrompt('Please fix errors to submit.', 'submit-error', 'red');
 // setTimeout(function(){jsHide('submit-error');}, 2000);
 return false;
 }
 else {
-
+ 
 }
 }
 
@@ -203,4 +221,3 @@ document.getElementById(promptLocation).style.color = color;
 
 
 
-    
