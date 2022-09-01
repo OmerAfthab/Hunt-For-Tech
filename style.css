@@ -16,6 +16,13 @@ body{
 :root {
     --official-color: #81007F;
 }
+
+
+.contact-error-msg, .error-textarea-msg{
+    position: relative;
+    top: 0.5rem;
+}
+
 .custom-hover{
     color: white;
 }
@@ -515,6 +522,14 @@ background-color: #f1f1f1;
     overflow-x: hidden !important;
 
 }
+.contact-error-msg, .error-textarea-msg{
+    position: relative;
+    top: 0rem;
+}
+#phone {
+ margin-bottom: 1rem !important;
+ width:90vw !important;   
+}
 .swiper_business_section{
     padding:0 0rem
 }
@@ -607,9 +622,6 @@ and (max-device-width:1736px){
     .footer-svg-two img {
         left: 65px;
         
-    }
-    .first-card {
-    
     }
  .extra-large-screen {
      width: auto;
@@ -734,4 +746,16 @@ and (max-device-width:2000px){
           width: 75%;
            margin-left: 0rem;
          }
+    }
+
+    @media only screen and (min-width: 1320px) and (max-device-width:1400px){
+        
+        .card-container {
+           display: grid;
+           column-gap: 4rem;
+            width: 70%;
+           margin-left: 3rem;
+         }
+
+    
     }

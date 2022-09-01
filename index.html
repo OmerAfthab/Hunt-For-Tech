@@ -24,8 +24,10 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="./script.js" defer></script>
-
-  </head>
+    <!-- country codes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
 <body >
     <header id="navbar" class="custom-bg-color">
         <nav class="navbar navbar-expand-lg navbar-light ps-md-3 justify-content-between custom-header-color p-2-4"
@@ -551,25 +553,25 @@
                                         <input class="native-country w-100 border-1 ps-3 py-3 py-md-2 form-control" type="text" placeholder="Country" required>
                                     </div>
                                     <div class="inputBox">
-                                        <input id="contact-phone" class=" w-100 border-1 ps-3 py-3 py-md-2 form-control" type="tel" name="phone" placeholder="Ex: 1231231234" required onkeyup='validatePhone()'>
-                                        <span class='error-message' id='phone-error'></span>
+                                        <input id="phone" class=" w-100 border-1 ps-md-5 py-3 py-md-2 form-control" type="tel" maxlength="10" name="phone" placeholder="1231231234" required onkeyup='validatePhone()'>
+                                        <span class='error-message contact-error-msg' id='phone-error'></span>
                                     </div>
                                 </div>
         
                                 <div class="row100">
                                     <div class="custom-textarea">
                                         <textarea class="form-control" id='contact-message'  name='message'  placeholder="How can we Help?" required onkeyup='validateMessage()'></textarea>
-                                        <!-- <span class='error-message ' id='message-error'></span> -->
+                                        <span class='error-message error-textarea-msg' id='message-error'></span>
                                         
                                     </div>
                                     <div class="text-center text-md-end" >
                                     <!-- <button class="btn rounded-5 fw-bold px-4 p-2 text-white submit-button">Contact Us</button> -->
                              
-                                <a class="btn rounded-5 fw-bold px-4 p-2 text-white custom-btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+                                <a onclick="return validateForm()" class="btn rounded-5 fw-bold px-4 p-2 text-white custom-btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
                                        
             
-                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog ">
+                                      <div class="modal" id="exampleModal"   tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
                                           <div class="modal-content">
                                             <div class="modal-header">
                                               <h5 class="modal-title text-black" id="exampleModalLabel">Hunt4Tech</h5>
@@ -582,8 +584,11 @@
                                                 <p class="contact-num"><b>Contact:</b></p>
                                                  <p class="message-given"><b>Your Message:</b></p>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" onclick="return validateForm()" class="btn btn-primary submit-button">Submit</button>
+                                            <!-- <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary submit-button">Submit</button>
+                                              </div> -->
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
                                               </div>
                                           </div>
                                         </div>
@@ -697,6 +702,7 @@
 
     </footer>
 
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -704,6 +710,14 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+        <script>
+            const phoneInputField = document.querySelector("#phone");
+           const phoneInput = window.intlTelInput(phoneInputField, {
+             utilsScript:
+               "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+           });
+           </script>
 </body>
 
 </html>
