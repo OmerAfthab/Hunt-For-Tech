@@ -118,9 +118,7 @@ footer {
     max-width: 98%;
   
 }
-.bg_gray {
-   background-color: #F4F4F4;
-}
+
 .h-custom {
     height: 51px;
 }
@@ -178,27 +176,7 @@ footer {
 .p-2-4{
     padding: 13px 0;
 }
-.footer-svg-one {
-    width: 15vw;
-   position: relative;
-   left: 16%;
-}
-.footer-svg-one img {
-    position: absolute;
-    bottom: 0rem;
-}
-.footer-svg-two{
-    width: 10vw;
-    position: relative;
-
-}
-.footer-svg-two img {
-    height: 120px !important;
-    position: relative;
-    left: 2.4rem;
-    
-}
-.custom-position-style {
+.footer-top-box {
     position: relative;
     width: 75vw;
     top: 2.5rem;
@@ -314,14 +292,10 @@ footer {
     display: none;
   }
   .swiper-pagination-bullet-active {
-    /* background-color: #7D50C7 !important; */
     background-color: #81007F !important;
 }
   .swiper-pagination{
-    /* color: #5828A7 !important; */
     color: #81007F !important;
-
-    
 }
 
 .official_text_light{
@@ -607,7 +581,7 @@ footer {
     gap: 10px;
 }
 
-.custom-position-style {
+.footer-top-box {
     background-color: #81007F;
     width: 100vw;
     margin-bottom: 2rem;
@@ -617,25 +591,6 @@ footer {
     height: 15rem;
     position: relative;
     top: 2.5rem;
-}
-.footer-svg-one {
-    width: 20vw;
-   position: relative;
-   left: 16%;
-}
-.footer-svg-one img {
-    position: absolute;
-    bottom: 0rem;
-}
-.footer-svg-two{
-    width: 12vw;
-    position: relative;
-
-}
-
-.footer-svg-two img {
-    left: 13px;
-    
 }
 .first-card {
     width: 100%;
@@ -658,10 +613,6 @@ footer {
 
 @media only screen and (min-device-width: 1400px) 
 and (max-device-width:1736px){
-    .footer-svg-two img {
-        left: 65px;
-        
-    }
  .extra-large-screen {
      width: auto;
      display: flex;
@@ -681,9 +632,7 @@ and (max-device-width:1736px){
 
 @media only screen and (min-device-width: 1750px) 
 and (max-device-width:2000px){
-    .footer-svg-two img {
-       left: 6.2rem;  
-    }
+   
     
     #services {
         width: 90%;
@@ -700,9 +649,7 @@ and (max-device-width:2000px){
 }
     @media only screen and (min-device-width: 2001px) 
     and (max-device-width:2265px){
-        .footer-svg-two img {
-           left: 8rem;       
-      }
+      
       #services {
         width: 70%;
         margin: auto;
@@ -722,9 +669,7 @@ and (max-device-width:2000px){
 
     @media only screen and (min-device-width: 2266px) 
     and (max-device-width:2500px){
-        .footer-svg-two img {
-           left: 10rem;       
-      }
+       
       #services {
         width: 70%;
         margin: auto;
@@ -852,10 +797,7 @@ and (max-device-width:2000px){
             position: relative;
             left: -15%;
             }
-        /* .card-container {
-          width: 75%;
-           margin-left: 0rem;
-         } */
+       
          .first-card {
             margin-right: 0.5rem;
             width: 300px;
