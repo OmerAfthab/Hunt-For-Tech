@@ -86,7 +86,7 @@ body{
 }
 footer {
     background-color: #3d093c;
-    height:55vh;
+    height:50vh;
     background-image: url('./assets/footer hfort .svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -830,8 +830,8 @@ and (max-device-width:2000px){
      width:16vw !important;   
     }
     footer {
-        height: 40vh;
-        /* background-color: #3d093c; */
+        height: 38vh;
+        background-color: #3d093c;
         background-image: url('./assets/footer hfort .svg');
         background-position: center;
         background-repeat: no-repeat;
@@ -839,7 +839,7 @@ and (max-device-width:2000px){
         object-fit: cover; 
     }
     .reserved-copyright{
-        margin-top: 5rem !important;
+        margin-top: 5.4rem !important;
     }
     }
 
