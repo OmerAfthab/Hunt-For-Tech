@@ -88,7 +88,7 @@ footer {
     background-color: #3d093c;
     height:50vh;
     background-image: url('./assets/footer hfort .svg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover; 
@@ -536,7 +536,7 @@ background-color: #f1f1f1;
     width: 100%;
     background-color: #3d093c;
     background-image: url('./assets/bg\ img.svg');
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover; 
@@ -548,9 +548,8 @@ background-color: #f1f1f1;
     top: 0rem;
 }
 footer {
-    height: 52vh;
-    /* background-color: #3d093c; */
-    
+    height: 52.3vh;
+    background-color: #3d093c;
     background-image: url('./assets/footer hfort .svg');
     background-position: 15%;
     background-repeat: no-repeat;
@@ -830,16 +829,20 @@ and (max-device-width:2000px){
      width:16vw !important;   
     }
     footer {
-        height: 38vh;
+        height: 35vh;
         background-color: #3d093c;
         background-image: url('./assets/footer hfort .svg');
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         object-fit: cover; 
     }
+    .footer-heading{
+        margin-top: 5.5rem !important;
+       
+    }
     .reserved-copyright{
-        margin-top: 5.4rem !important;
+        margin-top: 0rem !important;
     }
     }
 

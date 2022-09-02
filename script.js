@@ -116,7 +116,7 @@ return true;
 function validatePhone() {
 
 var phone = document.getElementById('phone').value;
-
+console.log(phone)
 
 if(phone.length == 0) {
   producePrompt('Phone number is required.', 'phone-error', 'red');
@@ -124,13 +124,13 @@ if(phone.length == 0) {
   return false;
 }
 
-if(phone.length != 10 ) {
-  producePrompt('10 digit number with Country Code.', 'phone-error', 'red');
+if(phone.length <= 8 ) {
+  producePrompt('Number with Country Code.', 'phone-error', 'red');
   document.querySelector('.modal-dialog').style.display='none';
   return false;
 }
 
-if(!phone.match(/^[0-9]{10}$/)) {
+if(!phone.match(/^[0-9]{0,10}$/)) {
   producePrompt('Only digits, please.' ,'phone-error', 'red');
   document.querySelector('.modal-dialog').style.display='none'
   return false;
