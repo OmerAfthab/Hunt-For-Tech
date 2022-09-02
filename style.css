@@ -829,6 +829,18 @@ and (max-device-width:2000px){
     #phone {    
      width:16vw !important;   
     }
+    footer {
+        height: 40vh;
+        /* background-color: #3d093c; */
+        background-image: url('./assets/footer hfort .svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover; 
+    }
+    .reserved-copyright{
+        margin-top: 5rem !important;
+    }
     }
 
     @media only screen and (min-width: 2000px) and (max-device-width:2500px){
