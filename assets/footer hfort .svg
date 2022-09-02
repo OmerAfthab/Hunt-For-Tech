@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1371.913" height="357.789" viewBox="0 0 1371.913 357.789">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_576" data-name="Rectangle 576" width="253" height="286" transform="translate(863 4861)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_577" data-name="Rectangle 577" width="373" height="186" transform="translate(-135 4961)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_864" data-name="Group 864" transform="translate(255.913 -4789.211)">
+    <rect id="Rectangle_575" data-name="Rectangle 575" width="1371.526" height="357.789" transform="translate(-255.913 4789.211)" fill="#15173e"/>
+    <g id="Mask_Group_9" data-name="Mask Group 9" clip-path="url(#clip-path)">
+      <g id="Group_863" data-name="Group 863" transform="translate(-897.386 612)">
+        <g id="Ellipse_73" data-name="Ellipse 73" transform="translate(1862 4386)" fill="none" stroke="#918e8e" stroke-width="1">
+          <circle cx="126.5" cy="126.5" r="126.5" stroke="none"/>
+          <circle cx="126.5" cy="126.5" r="126" fill="none"/>
+        </g>
+        <g id="Ellipse_74" data-name="Ellipse 74" transform="translate(1901 4425)" fill="none" stroke="#918e8e" stroke-width="1">
+          <circle cx="87.5" cy="87.5" r="87.5" stroke="none"/>
+          <circle cx="87.5" cy="87.5" r="87" fill="none"/>
+        </g>
+        <g id="Ellipse_75" data-name="Ellipse 75" transform="translate(1928 4452)" fill="none" stroke="#918e8e" stroke-width="1">
+          <circle cx="61" cy="61" r="61" stroke="none"/>
+          <circle cx="61" cy="61" r="60.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Mask_Group_10" data-name="Mask Group 10" clip-path="url(#clip-path-2)">
+      <g id="Group_862" data-name="Group 862" transform="translate(-1924.386 680)">
+        <g id="Ellipse_73-2" data-name="Ellipse 73" transform="translate(1862 4386)" fill="none" stroke="#918e8e" stroke-width="1">
+          <circle cx="126.5" cy="126.5" r="126.5" stroke="none"/>
+          <circle cx="126.5" cy="126.5" r="126" fill="none"/>
+        </g>
+        <g id="Ellipse_74-2" data-name="Ellipse 74" transform="translate(1901 4425)" fill="none" stroke="#918e8e" stroke-width="1">
+          <circle cx="87.5" cy="87.5" r="87.5" stroke="none"/>
+          <circle cx="87.5" cy="87.5" r="87" fill="none"/>
+        </g>
+        <g id="Ellipse_75-2" data-name="Ellipse 75" transform="translate(1928 4452)" fill="none" stroke="#918e8e" stroke-width="1">
+          <circle cx="61" cy="61" r="61" stroke="none"/>
+          <circle cx="61" cy="61" r="60.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
