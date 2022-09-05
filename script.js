@@ -10,12 +10,10 @@ function myFunction() {
   }
 }
 // code for Collapse the navbar when the link is clicked
-// const navLinks = document.querySelectorAll('.nav-item')
-// const menuToggle = document.getElementById('navbarSupportedContent')
-// const bsCollapse = new bootstrap.Collapse(menuToggle)
-// navLinks.forEach((l) => {
-//     l.addEventListener('click', () => { bsCollapse.toggle() })
-// })
+$("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
+  $("#navbarSupportedContent").collapse("hide");
+});
+// end
 
 
 $('.a-top-nav').click(function() {
