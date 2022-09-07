@@ -17,6 +17,9 @@ body{
     --official-color: #81007F;
 }
 
+.navbar-light .navbar-toggler-icon {
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 .contact-error-msg, .error-textarea-msg{
     position: relative;
@@ -90,6 +93,7 @@ body{
 .bg_gray {
     background-color: #F4F4F4;
 }
+
 footer {
     background-color: #3d093c;
     height:50vh;
@@ -137,6 +141,7 @@ footer {
    padding: 2rem;
 }
 .card-container {
+   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
    column-gap: 15px;
@@ -662,27 +667,52 @@ footer {
 @media only screen and (min-device-width: 1400px) 
 and (max-device-width:1736px){
  .extra-large-screen {
-     width: auto;
-     display: flex;
-     justify-content: center;
+     width: 92%;
+     margin: auto;
      }
- .card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 4rem;
- }
+     .card-height {
+        width: 305px;
+        height: 210px;
+    }
+    .first-card {
+        width: 305px;
+        height: 430px;
+    }
 
  .about-left{
     margin-left: -1.5rem;
  }
    
 }
+@media only screen and (min-device-width: 1600px) 
+and (max-device-width:1750px){
+    .extra-large-screen {
+         position: relative;
+         left: 8%;
+        
+    
+        }
+        .card-height {
+           width: 270px;
+           height: 210px;
+       }
+       .first-card {
+           width: 272px;
+           height: 430px;
+       }
+}
 
 @media only screen and (min-device-width: 1750px) 
 and (max-device-width:2000px){
-   
-    
-    #services {
+       .card-height {
+          width: 340px;
+          height: 210px;
+      }
+      .first-card {
+          width: 272px;
+          height: 430px;
+      }
+      #services {
         width: 90%;
         margin: auto;
     }
@@ -747,21 +777,6 @@ and (max-device-width:2000px){
             width: 80%;
             top: 0rem;
        }
-
-       .card-container {
-           display: grid;
-           grid-template-columns: repeat(3,1fr);
-           column-gap: 3px;
-       }
-       .first-card {
-           /* margin-right: 0.5rem; */
-           width: 300px;
-           height: 447px;
-       }
-       .card-height {
-        width: 315px;
-        height: 220px;
-    }
     
     .extra-large-screen {
         margin-left: -3rem;
