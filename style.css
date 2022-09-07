@@ -663,7 +663,17 @@ footer {
     }
 
 }
-
+@media only screen and (min-device-width: 1350px) 
+and (max-device-width:1400px){
+        .card-height {
+            width: 295px;
+            height: 210px;
+        }
+        .first-card {
+            width: 300px;
+            height: 430px;
+        }
+}
 @media only screen and (min-device-width: 1400px) 
 and (max-device-width:1700px){
  .extra-large-screen {
