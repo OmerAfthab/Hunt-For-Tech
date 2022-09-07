@@ -665,17 +665,17 @@ footer {
 }
 
 @media only screen and (min-device-width: 1400px) 
-and (max-device-width:1736px){
+and (max-device-width:1700px){
  .extra-large-screen {
      width: 92%;
      margin: auto;
      }
      .card-height {
-        width: 305px;
+        width: 332px;
         height: 210px;
     }
     .first-card {
-        width: 305px;
+        width: 310px;
         height: 430px;
     }
 
