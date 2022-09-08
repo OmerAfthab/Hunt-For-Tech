@@ -59,11 +59,16 @@ body{
     
 }
 .header-logo-image{
-    width: 80%;
+    width: 20vw;
     margin-left:-0.3rem;
 }
 .custom-header-color {
     background-color: var(--official-color);
+}
+
+.one-more-service img {
+    width: 40%;
+    
 }
 
 .navbar-toggler:active {
@@ -161,11 +166,11 @@ footer {
 }
 
 .card-height {
-    width: 285px;
+    width: 300px;
     height: 198px;
 }
 .first-card {
-    width: 248px;
+    width: 250px;
     height: 406px;
 }
 .resize-img {
@@ -546,6 +551,13 @@ border-radius: 17px;
     overflow-x: hidden !important;
 
 }
+.header-logo-image{
+    width: 70%;
+}
+.one-more-service img {
+    width: 30%;
+    /* margin-bottom: 0.6rem; */
+}
 .seo-image {
    /* border: 1px solid red; */
    position: relative;
@@ -663,17 +675,7 @@ footer {
     }
 
 }
-@media only screen and (min-device-width: 1350px) 
-and (max-device-width:1400px){
-        .card-height {
-            width: 295px;
-            height: 210px;
-        }
-        .first-card {
-            width: 300px;
-            height: 430px;
-        }
-}
+
 @media only screen and (min-device-width: 1400px) 
 and (max-device-width:1700px){
  .extra-large-screen {
